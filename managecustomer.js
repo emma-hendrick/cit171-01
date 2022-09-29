@@ -53,7 +53,7 @@ function findcustomer(email){
     var headers = { "suresteps.session.token": localStorage.getItem("token")};
     $.ajax({
         type: 'GET',
-        url: `/customer/${email}`,
+        url: `https://dev.stedi.me/customer/${email}`,
         contentType: 'application/text',
         dataType: 'text',
         headers: headers,
